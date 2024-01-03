@@ -15,6 +15,7 @@
     <description>microservices-demo</description>
     <modules>
         <module>twitter-to-kafka-service</module>
+        <module>app-config-data</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -24,6 +25,7 @@
         <lombok.version>1.18.30</lombok.version>
         <httpclient.version>4.5.14</httpclient.version>
         <json.version>20231013</json.version>
+        <app-config.version>1.0</app-config.version>
     </properties>
 
     <dependencyManagement>
@@ -39,6 +41,12 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${spring-boot.version}</version>
                 <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.togrul</groupId>
+                <artifactId>app-config-data</artifactId>
+                <version>${app-config.version}</version>
             </dependency>
 
             <dependency>

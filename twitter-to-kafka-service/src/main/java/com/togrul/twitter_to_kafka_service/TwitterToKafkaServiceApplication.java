@@ -1,6 +1,6 @@
 package com.togrul.twitter_to_kafka_service;
 
-import com.togrul.twitter_to_kafka_service.config.TwitterToKafkaServiceConfig;
+import com.togrul.app_config_data.config.TwitterToKafkaServiceConfig;
 import com.togrul.twitter_to_kafka_service.runner.StreamRunner;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -8,12 +8,14 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Arrays;
 
 @Slf4j
 @SpringBootApplication
 @RequiredArgsConstructor
+@ComponentScan(basePackages = "com.togrul")
 public class TwitterToKafkaServiceApplication {
 
     private final StreamRunner streamRunner;

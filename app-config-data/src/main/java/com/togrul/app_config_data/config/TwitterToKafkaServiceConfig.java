@@ -1,4 +1,4 @@
-package com.togrul.twitter_to_kafka_service.config;
+package com.togrul.app_config_data.config;
 
 import lombok.AccessLevel;
 import lombok.Data;

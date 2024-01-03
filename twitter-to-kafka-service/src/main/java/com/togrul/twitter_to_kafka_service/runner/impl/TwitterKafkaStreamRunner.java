@@ -1,6 +1,6 @@
 package com.togrul.twitter_to_kafka_service.runner.impl;
 
-import com.togrul.twitter_to_kafka_service.config.TwitterToKafkaServiceConfig;
+import com.togrul.app_config_data.config.TwitterToKafkaServiceConfig;
 import com.togrul.twitter_to_kafka_service.listener.TwitterKafkaStatusListener;
 import com.togrul.twitter_to_kafka_service.runner.StreamRunner;
 import lombok.RequiredArgsConstructor;

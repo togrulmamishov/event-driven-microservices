@@ -46,11 +46,15 @@
         </dependency>
 
         <dependency>
+            <groupId>com.togrul</groupId>
+            <artifactId>app-config-data</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 
     <build>
